@@ -50,6 +50,7 @@
 #import <AR/gsub_es.h>
 #import "../ARAppCore/ARMarkerSquare.h"
 #import "../ARAppCore/ARMarkerMulti.h"
+#import "MessageViewController.h"
 
 #define VIEW_DISTANCE_MIN        5.0f          // Objects closer to the camera than this will not be displayed.
 #define VIEW_DISTANCE_MAX        2000.0f        // Objects further away from the camera than this will not be displayed.
@@ -88,6 +89,8 @@
     ARView         *glView;
     VirtualEnvironment *virtualEnvironment;
     ARGL_CONTEXT_SETTINGS_REF arglContextSettings;
+    
+    UIButton *nextButton;
 }
 
 @synthesize glView, virtualEnvironment, markers;
@@ -144,6 +147,13 @@
     videoPaused = FALSE;
     runLoopTimePrevious = CFAbsoluteTimeGetCurrent();
     videoAsync = FALSE;
+    
+    nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    nextButton.frame = self.view.bounds;
+    [nextButton setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
+    [self.view addSubview:nextButton];
+    
+    [nextButton addTarget:self action:@selector(nextPage) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -351,6 +361,7 @@ static void startCallback(void *userData)
     glView = [[[ARView alloc] initWithFrame:[[UIScreen mainScreen] bounds] pixelFormat:kEAGLColorFormatRGBA8 depthFormat:kEAGLDepth16 withStencil:NO preserveBackbuffer:NO] autorelease]; // Don't retain it, as it will be retained when added to self.view.
     glView.arViewController = self;
     [self.view addSubview:glView];
+    [self.view bringSubviewToFront:nextButton];
     
     // Create the OpenGL projection from the calibrated camera parameters.
     // If flipV is set, flip.
@@ -555,6 +566,13 @@ static void startCallback(void *userData)
 - (void)setMarkersHaveWhiteBorders:(BOOL)markersHaveWhiteBorders
 {
     arSetLabelingMode(gARHandle, (markersHaveWhiteBorders ? AR_LABELING_WHITE_REGION : AR_LABELING_BLACK_REGION));
+}
+
+#pragma mark - 自行新增
+- (void)nextPage
+{
+    MessageViewController *vc = [[MessageViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

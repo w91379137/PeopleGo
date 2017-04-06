@@ -925,6 +925,9 @@
 		4AF9712B1B5F5709001BFEB5 /* timers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF9706A1B5F5708001BFEB5 /* timers.cpp */; };
 		4AF9712D1B5F5709001BFEB5 /* freak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF970771B5F5708001BFEB5 /* freak.cpp */; };
 		4AF9712E1B5F5709001BFEB5 /* hough_similarity_voting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF9707A1B5F5708001BFEB5 /* hough_similarity_voting.cpp */; };
+		F8A058D01E9649AF0012F7A8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */; };
+		F8A058D11E964C950012F7A8 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */; };
+		F8A058D21E964C9B0012F7A8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3313,6 +3316,9 @@
 		78BB3F2008E4837000D7CA2D /* video.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = video.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		78BB3F2108E4837000D7CA2D /* videoConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = videoConfig.h; sourceTree = "<group>"; };
 		78BB3F5208E483CB00D7CA2D /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		F8A058CD1E9649AF0012F7A8 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4210,6 +4216,9 @@
 				4A0619B513D59DF10066826B /* ARAppMovieDelegate.m */,
 				4A0619BA13D59DF10066826B /* ARViewController.h */,
 				4A0619BB13D59DF10066826B /* ARViewController.m */,
+				F8A058CD1E9649AF0012F7A8 /* MessageViewController.h */,
+				F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */,
+				F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -7385,6 +7394,7 @@
 				4AA8B597161AD60D00B48D70 /* Default.png in Resources */,
 				4AA8B598161AD60D00B48D70 /* Default@2x.png in Resources */,
 				4AA8B5DA161AEDDE00B48D70 /* Iris-568h@2x.png in Resources */,
+				F8A058D11E964C950012F7A8 /* MessageViewController.xib in Resources */,
 				4AA8B5DB161AEDDE00B48D70 /* Iris-iPad.png in Resources */,
 				4AA8B5DC161AEDDE00B48D70 /* Iris-iPad@2x.png in Resources */,
 				4AA8B5DD161AEDDE00B48D70 /* Iris@2x.png in Resources */,
@@ -7664,6 +7674,7 @@
 				4A33B6DA18ADB97A0028A979 /* VEObject.m in Sources */,
 				4A33B6D518ADB95F0028A979 /* VEObjectMovie.m in Sources */,
 				4A33B6DF18ADB9A30028A979 /* VirtualEnvironment.m in Sources */,
+				F8A058D21E964C9B0012F7A8 /* MessageViewController.m in Sources */,
 				4A33B6CA18ADB86F0028A979 /* EAGLView.m in Sources */,
 				4A5BAAA513D82FFA00C8D5E7 /* ARViewController.m in Sources */,
 				4A5BAAA613D82FFA00C8D5E7 /* main.m in Sources */,
@@ -7900,6 +7911,7 @@
 				4AF10207180BFC9900A922DE /* arLabelingSubEBI3CA.c in Sources */,
 				4AF101D7180BFC9100A922DE /* paramGetPerspective.c in Sources */,
 				4AF101B1180BFC9100A922DE /* arCreateHandle.c in Sources */,
+				F8A058D01E9649AF0012F7A8 /* MessageViewController.m in Sources */,
 				4AF101F7180BFC9900A922DE /* arLabelingSubDWIA3C.c in Sources */,
 				4AF101B5180BFC9100A922DE /* arGetLine.c in Sources */,
 				4AF101F5180BFC9900A922DE /* arLabelingSubDWI3CA4444.c in Sources */,

@@ -1,0 +1,13 @@
+//
+//  MessageViewController.h
+//  ARToolKit5iOS
+//
+//  Created by w91379137 on 2017/4/6.
+//
+//
+
+#import <UIKit/UIKit.h>
+
+@interface MessageViewController : UIViewController
+
+@end

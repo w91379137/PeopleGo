@@ -566,7 +566,7 @@ static void startCallback(void *userData)
     arSetLabelingMode(gARHandle, (markersHaveWhiteBorders ? AR_LABELING_WHITE_REGION : AR_LABELING_BLACK_REGION));
 }
 
-#pragma mark - 自行新增
+#pragma mark - IBAction
 - (IBAction)messageAction
 {
     MessageViewController *vc = [[MessageViewController alloc] init];

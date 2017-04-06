@@ -9,11 +9,15 @@
 #import "MessageViewController.h"
 
 @interface MessageViewController ()
+{
+    IBOutlet UIWebView *webView;
+}
 
 @end
 
 @implementation MessageViewController
 
+#pragma mark - Life Cycle
 -(void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +28,34 @@
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSString *embedHTML = @"\
+    <html><head>\
+    <style type=\"text/css\">\
+    body {\
+    background-color: transparent;\
+    color: white;\
+    }\
+    </style>\
+    </head><body style=\"margin:0\">\
+    <embed id=\"yt\" src=\"%@\" type=\"application/x-shockwave-flash\" \
+    width=\"%0.0f\" height=\"%0.0f\"></embed>\
+    </body></html>";
+    NSString *html = [NSString stringWithFormat:embedHTML, @"https://www.youtube.com/watch?v=nJkhLNadub8", webView.frame.size.width, webView.frame.size.width * 3 / 4];
+    
+    webView.allowsInlineMediaPlayback = YES;
+    webView.scrollView.scrollEnabled = NO;
+    [webView loadHTMLString:html baseURL:nil];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [webView loadHTMLString:@"" baseURL:nil];
+    [super viewWillDisappear:animated];
 }
 
 @end

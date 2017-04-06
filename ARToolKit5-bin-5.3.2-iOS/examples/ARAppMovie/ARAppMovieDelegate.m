@@ -63,8 +63,6 @@
     arUtilChangeToResourcesDirectory(AR_UTIL_RESOURCES_DIRECTORY_BEHAVIOR_BEST, NULL);
     
     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:self.viewController];
-    nc.navigationBarHidden = YES;
-    
     self.window.rootViewController = nc;
     
     [window makeKeyAndVisible];

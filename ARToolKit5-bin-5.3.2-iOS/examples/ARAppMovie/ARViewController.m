@@ -89,8 +89,6 @@
     ARView         *glView;
     VirtualEnvironment *virtualEnvironment;
     ARGL_CONTEXT_SETTINGS_REF arglContextSettings;
-    
-    UIButton *nextButton;
 }
 
 @synthesize glView, virtualEnvironment, markers;
@@ -147,13 +145,6 @@
     videoPaused = FALSE;
     runLoopTimePrevious = CFAbsoluteTimeGetCurrent();
     videoAsync = FALSE;
-    
-    nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    nextButton.frame = self.view.bounds;
-    [nextButton setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
-    [self.view addSubview:nextButton];
-    
-    [nextButton addTarget:self action:@selector(nextPage) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -367,7 +358,8 @@ static void startCallback(void *userData)
     glView = [[[ARView alloc] initWithFrame:[[UIScreen mainScreen] bounds] pixelFormat:kEAGLColorFormatRGBA8 depthFormat:kEAGLDepth16 withStencil:NO preserveBackbuffer:NO] autorelease]; // Don't retain it, as it will be retained when added to self.view.
     glView.arViewController = self;
     [self.view addSubview:glView];
-    [self.view bringSubviewToFront:nextButton];
+    [self.view bringSubviewToFront:centerButton];
+    [self.view bringSubviewToFront:controlView];
     
     // Create the OpenGL projection from the calibrated camera parameters.
     // If flipV is set, flip.
@@ -575,7 +567,25 @@ static void startCallback(void *userData)
 }
 
 #pragma mark - 自行新增
-- (void)nextPage
+- (IBAction)messageAction
+{
+    MessageViewController *vc = [[MessageViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)mapAction
+{
+    MessageViewController *vc = [[MessageViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)createAction
+{
+    MessageViewController *vc = [[MessageViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)socialAction
 {
     MessageViewController *vc = [[MessageViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];

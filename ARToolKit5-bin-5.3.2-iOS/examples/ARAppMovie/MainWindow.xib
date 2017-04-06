@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment version="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIApplication">
@@ -20,13 +25,98 @@
         <window clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" visibleAtLaunch="YES" id="2" userLabel="Main Window">
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </window>
         <viewController autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" id="6" userLabel="AR View Controller" customClass="ARViewController">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="wtb-hH-Eqb"/>
+                <viewControllerLayoutGuide type="bottom" id="647-ZL-lgg"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="gtQ-uL-rse">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAm-5n-RWo">
+                        <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                        <connections>
+                            <action selector="messageAction" destination="6" eventType="touchUpInside" id="V8m-To-idn"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdk-IH-5ew">
+                        <rect key="frame" x="16" y="567" width="343" height="100"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojo-jc-VOy">
+                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="100"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapAction" destination="6" eventType="touchUpInside" id="XoY-HP-2eJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzc-sN-LFC">
+                                <rect key="frame" x="114.5" y="0.0" width="114" height="100"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAction" destination="6" eventType="touchUpInside" id="DaZ-ey-U64"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJE-FP-OLZ">
+                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="100"/>
+                                <state key="normal" title="Social">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="socialAction" destination="6" eventType="touchUpInside" id="e7s-05-XVT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HJE-FP-OLZ" secondAttribute="trailing" id="9Rc-cw-btV"/>
+                            <constraint firstItem="ojo-jc-VOy" firstAttribute="top" secondItem="tdk-IH-5ew" secondAttribute="top" id="H0J-KD-3bh"/>
+                            <constraint firstAttribute="height" constant="100" id="Pyv-xz-HIK"/>
+                            <constraint firstItem="Wzc-sN-LFC" firstAttribute="trailing" secondItem="HJE-FP-OLZ" secondAttribute="leading" id="ROO-7u-8MQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Wzc-sN-LFC" secondAttribute="bottom" id="Z43-a9-Dbp"/>
+                            <constraint firstItem="ojo-jc-VOy" firstAttribute="trailing" secondItem="Wzc-sN-LFC" secondAttribute="leading" id="alA-qx-Boc"/>
+                            <constraint firstAttribute="bottom" secondItem="ojo-jc-VOy" secondAttribute="bottom" id="jnM-1J-sTG"/>
+                            <constraint firstItem="HJE-FP-OLZ" firstAttribute="top" secondItem="tdk-IH-5ew" secondAttribute="top" id="mRm-1V-YUS"/>
+                            <constraint firstItem="Wzc-sN-LFC" firstAttribute="width" secondItem="HJE-FP-OLZ" secondAttribute="width" id="nM0-Vg-g2B"/>
+                            <constraint firstItem="ojo-jc-VOy" firstAttribute="leading" secondItem="tdk-IH-5ew" secondAttribute="leading" id="sgg-Ic-3KT"/>
+                            <constraint firstItem="ojo-jc-VOy" firstAttribute="width" secondItem="Wzc-sN-LFC" secondAttribute="width" id="wSl-FL-oTL"/>
+                            <constraint firstAttribute="bottom" secondItem="HJE-FP-OLZ" secondAttribute="bottom" id="wfN-gP-amC"/>
+                            <constraint firstItem="Wzc-sN-LFC" firstAttribute="top" secondItem="tdk-IH-5ew" secondAttribute="top" id="z3A-aA-era"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="647-ZL-lgg" firstAttribute="top" secondItem="tdk-IH-5ew" secondAttribute="bottom" id="0zw-0O-Hqb"/>
+                    <constraint firstItem="DAm-5n-RWo" firstAttribute="leading" secondItem="gtQ-uL-rse" secondAttribute="leadingMargin" id="C4a-zS-f36"/>
+                    <constraint firstItem="647-ZL-lgg" firstAttribute="top" secondItem="DAm-5n-RWo" secondAttribute="bottom" id="EA6-o4-Nzg"/>
+                    <constraint firstItem="tdk-IH-5ew" firstAttribute="leading" secondItem="gtQ-uL-rse" secondAttribute="leadingMargin" id="Pyk-eW-9J2"/>
+                    <constraint firstItem="DAm-5n-RWo" firstAttribute="top" secondItem="wtb-hH-Eqb" secondAttribute="bottom" id="ja5-fg-mwa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DAm-5n-RWo" secondAttribute="trailing" id="nvi-ly-cqO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tdk-IH-5ew" secondAttribute="trailing" id="rBD-gI-o0u"/>
+                </constraints>
+            </view>
             <extendedEdge key="edgesForExtendedLayout"/>
             <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="centerButton" destination="DAm-5n-RWo" id="QwE-qJ-4zf"/>
+                <outlet property="controlView" destination="tdk-IH-5ew" id="l8p-D4-pj9"/>
+                <outlet property="view" destination="gtQ-uL-rse" id="AOW-Xb-Mh1"/>
+            </connections>
+            <point key="canvasLocation" x="44" y="34"/>
         </viewController>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>

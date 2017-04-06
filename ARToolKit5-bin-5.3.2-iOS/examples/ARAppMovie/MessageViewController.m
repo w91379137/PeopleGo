@@ -14,6 +14,12 @@
 
 @implementation MessageViewController
 
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.title = @"Video";
+}
+
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];

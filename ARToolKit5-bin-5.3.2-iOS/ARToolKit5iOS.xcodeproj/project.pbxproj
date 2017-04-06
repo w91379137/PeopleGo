@@ -4214,11 +4214,8 @@
 			children = (
 				4A0619B413D59DF10066826B /* ARAppMovieDelegate.h */,
 				4A0619B513D59DF10066826B /* ARAppMovieDelegate.m */,
-				4A0619BA13D59DF10066826B /* ARViewController.h */,
-				4A0619BB13D59DF10066826B /* ARViewController.m */,
-				F8A058CD1E9649AF0012F7A8 /* MessageViewController.h */,
-				F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */,
-				F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */,
+				F8316B271E968BA400B566C0 /* CreatePart */,
+				F8316B281E968BB600B566C0 /* SearchPart */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -4240,7 +4237,6 @@
 				4AA8B5D8161AEDDE00B48D70 /* Iris-iPad@2x.png */,
 				4AA8B5D9161AEDDE00B48D70 /* Iris@2x.png */,
 				4A0619C413D59DF10066826B /* MainWindow-iPad.xib */,
-				4A0619C513D59DF10066826B /* MainWindow.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -6656,6 +6652,26 @@
 			name = "System Frameworks & Libraries";
 			sourceTree = "<group>";
 		};
+		F8316B271E968BA400B566C0 /* CreatePart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CreatePart;
+			sourceTree = "<group>";
+		};
+		F8316B281E968BB600B566C0 /* SearchPart */ = {
+			isa = PBXGroup;
+			children = (
+				4A0619BA13D59DF10066826B /* ARViewController.h */,
+				4A0619BB13D59DF10066826B /* ARViewController.m */,
+				4A0619C513D59DF10066826B /* MainWindow.xib */,
+				F8A058CD1E9649AF0012F7A8 /* MessageViewController.h */,
+				F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */,
+				F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */,
+			);
+			name = SearchPart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -8836,6 +8852,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = examples/ARAppMovie/ARAppMovie_Prefix.pch;
 				INFOPLIST_FILE = "examples/ARAppMovie/ARAppMovie-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = orgx.artoolkit.ARAppMovie;
 				PRODUCT_NAME = ARAppMovie;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8850,6 +8867,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = examples/ARAppMovie/ARAppMovie_Prefix.pch;
 				INFOPLIST_FILE = "examples/ARAppMovie/ARAppMovie-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = orgx.artoolkit.ARAppMovie;
 				PRODUCT_NAME = ARAppMovie;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8865,6 +8883,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = examples/ARAppMovie/ARAppMovie_Prefix.pch;
 				INFOPLIST_FILE = "examples/ARAppMovie/ARAppMovie-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = orgx.artoolkit.ARAppMovie;
 				PRODUCT_NAME = ARAppMovie;
 				PROVISIONING_PROFILE = "";

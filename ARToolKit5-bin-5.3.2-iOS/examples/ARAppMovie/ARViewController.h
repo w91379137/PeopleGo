@@ -65,6 +65,8 @@
 #import <AR/sys/CameraVideo.h>
 
 @interface ARViewController : UIViewController <CameraVideoTookPictureDelegate> {
+    IBOutlet UIButton *centerButton;
+    IBOutlet UIView *controlView;
 }
 
 - (IBAction)start;

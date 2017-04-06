@@ -131,7 +131,6 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = YES;
     
     // Init instance variables.
     glView = nil;
@@ -155,6 +154,12 @@
     [self.view addSubview:nextButton];
     
     [nextButton addTarget:self action:@selector(nextPage) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)viewDidAppear:(BOOL)animated

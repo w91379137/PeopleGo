@@ -19,20 +19,42 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera-Review &amp; Choose Model.png" translatesAutoresizingMaskIntoConstraints="NO" id="JlB-D0-5Nr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkm-TE-CWF">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <connections>
                         <action selector="poseAction" destination="-1" eventType="touchUpInside" id="6sr-Zp-yZe"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3R-1s-k58">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="bue-9X-W2M"/>
+                        <constraint firstAttribute="height" constant="70" id="r76-VI-2Sc"/>
+                    </constraints>
+                    <connections>
+                        <action selector="popAction" destination="-1" eventType="touchUpInside" id="Mui-k1-FzG"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Qkm-TE-CWF" secondAttribute="trailing" id="5Sw-vw-2Jj"/>
+                <constraint firstItem="JlB-D0-5Nr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FOH-fh-9e3"/>
+                <constraint firstItem="JlB-D0-5Nr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OhG-gh-voc"/>
                 <constraint firstAttribute="bottom" secondItem="Qkm-TE-CWF" secondAttribute="bottom" id="T1q-oN-6aQ"/>
                 <constraint firstItem="Qkm-TE-CWF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WFD-BG-y95"/>
+                <constraint firstItem="z3R-1s-k58" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a6X-11-Q6K"/>
+                <constraint firstAttribute="trailing" secondItem="JlB-D0-5Nr" secondAttribute="trailing" id="guE-ro-6U5"/>
                 <constraint firstItem="Qkm-TE-CWF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="llx-Ry-r5T"/>
+                <constraint firstAttribute="bottom" secondItem="JlB-D0-5Nr" secondAttribute="bottom" id="oG6-s4-dYy"/>
+                <constraint firstItem="z3R-1s-k58" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="voo-ym-dy8"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Camera-Review &amp; Choose Model.png" width="414" height="736"/>
+    </resources>
 </document>

@@ -941,6 +941,10 @@
 		F8BF35C21E973FCA00C2B7BA /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF35C01E973FCA00C2B7BA /* BasicViewController.m */; };
 		F8BF35C41E9771BD00C2B7BA /* Collection.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35C31E9771BD00C2B7BA /* Collection.png */; };
 		F8BF35C61E97722100C2B7BA /* Collection-View Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35C51E97722100C2B7BA /* Collection-View Profile.png */; };
+		F8BF35C81E9772FD00C2B7BA /* Take a Selfie.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35C71E9772FD00C2B7BA /* Take a Selfie.png */; };
+		F8BF35CA1E97736A00C2B7BA /* Camera-Review & Choose Model.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35C91E97736A00C2B7BA /* Camera-Review & Choose Model.png */; };
+		F8BF35CC1E9773A900C2B7BA /* Customize-Outfit.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35CB1E9773A900C2B7BA /* Customize-Outfit.png */; };
+		F8BF35CE1E97741500C2B7BA /* Customize-View Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35CD1E97741500C2B7BA /* Customize-View Avatar.png */; };
 		F8D1DCEB1E972CDF004BE599 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCE81E972CC2004BE599 /* SelectViewController.m */; };
 		F8D1DCEC1E972CDF004BE599 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */; };
 		F8D1DCF01E972E65004BE599 /* AdjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCEE1E972E65004BE599 /* AdjustViewController.m */; };
@@ -3353,6 +3357,10 @@
 		F8BF35C01E973FCA00C2B7BA /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
 		F8BF35C31E9771BD00C2B7BA /* Collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Collection.png; sourceTree = "<group>"; };
 		F8BF35C51E97722100C2B7BA /* Collection-View Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collection-View Profile.png"; sourceTree = "<group>"; };
+		F8BF35C71E9772FD00C2B7BA /* Take a Selfie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Take a Selfie.png"; sourceTree = "<group>"; };
+		F8BF35C91E97736A00C2B7BA /* Camera-Review & Choose Model.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Camera-Review & Choose Model.png"; sourceTree = "<group>"; };
+		F8BF35CB1E9773A900C2B7BA /* Customize-Outfit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Customize-Outfit.png"; sourceTree = "<group>"; };
+		F8BF35CD1E97741500C2B7BA /* Customize-View Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Customize-View Avatar.png"; sourceTree = "<group>"; };
 		F8D1DCE71E972CC2004BE599 /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
 		F8D1DCE81E972CC2004BE599 /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
 		F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
@@ -6709,15 +6717,19 @@
 				F8D1DCE71E972CC2004BE599 /* SelectViewController.h */,
 				F8D1DCE81E972CC2004BE599 /* SelectViewController.m */,
 				F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */,
+				F8BF35C71E9772FD00C2B7BA /* Take a Selfie.png */,
 				F8D1DCED1E972E65004BE599 /* AdjustViewController.h */,
 				F8D1DCEE1E972E65004BE599 /* AdjustViewController.m */,
 				F8D1DCEF1E972E65004BE599 /* AdjustViewController.xib */,
+				F8BF35C91E97736A00C2B7BA /* Camera-Review & Choose Model.png */,
 				F8BF35B11E973AA700C2B7BA /* PoseViewController.h */,
 				F8BF35B21E973AA700C2B7BA /* PoseViewController.m */,
 				F8BF35B31E973AA700C2B7BA /* PoseViewController.xib */,
+				F8BF35CB1E9773A900C2B7BA /* Customize-Outfit.png */,
 				F8BF35B81E973F5800C2B7BA /* WriteViewController.h */,
 				F8BF35B91E973F5800C2B7BA /* WriteViewController.m */,
 				F8BF35BA1E973F5800C2B7BA /* WriteViewController.xib */,
+				F8BF35CD1E97741500C2B7BA /* Customize-View Avatar.png */,
 			);
 			name = CreatePart;
 			sourceTree = "<group>";
@@ -7464,10 +7476,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8BF35C41E9771BD00C2B7BA /* Collection.png in Resources */,
+				F8BF35C81E9772FD00C2B7BA /* Take a Selfie.png in Resources */,
 				4A5BAA9713D82FB100C8D5E7 /* Iris.png in Resources */,
 				4A5BAA9813D82FB100C8D5E7 /* MainWindow-iPad.xib in Resources */,
 				4A5BAA9913D82FB100C8D5E7 /* MainWindow.xib in Resources */,
 				F8BF35B71E973AA700C2B7BA /* PoseViewController.xib in Resources */,
+				F8BF35CC1E9773A900C2B7BA /* Customize-Outfit.png in Resources */,
 				4A5BAA9B13D82FC500C8D5E7 /* Data2 in Resources */,
 				F8D1DCFB1E972F88004BE599 /* SocialViewController.xib in Resources */,
 				F8BF35C61E97722100C2B7BA /* Collection-View Profile.png in Resources */,
@@ -7478,6 +7492,7 @@
 				4AF6EFA413DCF78700F77FB0 /* Icon-Small@2x.png in Resources */,
 				4AF6EFA513DCF78700F77FB0 /* Icon.png in Resources */,
 				4AF6EFA613DCF78700F77FB0 /* Icon@2x.png in Resources */,
+				F8BF35CA1E97736A00C2B7BA /* Camera-Review & Choose Model.png in Resources */,
 				F8D1DCEC1E972CDF004BE599 /* SelectViewController.xib in Resources */,
 				4AA8B58E161AD60D00B48D70 /* Default-568h@2x.png in Resources */,
 				4AA8B58F161AD60D00B48D70 /* Default-LandscapeLeft.png in Resources */,
@@ -7490,6 +7505,7 @@
 				4AA8B595161AD60D00B48D70 /* Default-PortraitUpsideDown.png in Resources */,
 				4AA8B596161AD60D00B48D70 /* Default-PortraitUpsideDown@2x.png in Resources */,
 				4AA8B597161AD60D00B48D70 /* Default.png in Resources */,
+				F8BF35CE1E97741500C2B7BA /* Customize-View Avatar.png in Resources */,
 				4AA8B598161AD60D00B48D70 /* Default@2x.png in Resources */,
 				F8BF35B01E9737C500C2B7BA /* map.png in Resources */,
 				4AA8B5DA161AEDDE00B48D70 /* Iris-568h@2x.png in Resources */,

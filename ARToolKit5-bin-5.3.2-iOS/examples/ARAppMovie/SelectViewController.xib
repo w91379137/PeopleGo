@@ -19,40 +19,49 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Take a Selfie.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yak-O2-RTt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ela-6Z-tdH">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
-                    <state key="normal" title="Photos">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <state key="normal">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="adjustAction" destination="-1" eventType="touchUpInside" id="9EZ-zk-RgE"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9D-0i-yHn">
-                    <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
-                    <state key="normal" title="Take One">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPP-Ha-ftj">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="K1D-qg-mS0"/>
+                        <constraint firstAttribute="width" constant="70" id="P5W-za-Bwl"/>
+                    </constraints>
                     <connections>
-                        <action selector="adjustAction" destination="-1" eventType="touchUpInside" id="GO5-Gv-hnh"/>
+                        <action selector="popAction" destination="-1" eventType="touchUpInside" id="RjZ-uf-8cc"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ela-6Z-tdH" firstAttribute="bottom" secondItem="m9D-0i-yHn" secondAttribute="top" id="DDb-3a-heU"/>
-                <constraint firstAttribute="trailing" secondItem="m9D-0i-yHn" secondAttribute="trailing" id="Nix-RC-1lK"/>
+                <constraint firstAttribute="bottom" secondItem="ela-6Z-tdH" secondAttribute="bottom" id="4hM-W0-tmG"/>
+                <constraint firstAttribute="trailing" secondItem="Yak-O2-RTt" secondAttribute="trailing" id="L1E-8p-dWh"/>
                 <constraint firstItem="ela-6Z-tdH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QvR-2T-KQb"/>
-                <constraint firstItem="m9D-0i-yHn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eeK-b1-z4q"/>
+                <constraint firstItem="KPP-Ha-ftj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RdB-iQ-KDj"/>
+                <constraint firstItem="KPP-Ha-ftj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X6w-zI-yI4"/>
+                <constraint firstAttribute="bottom" secondItem="Yak-O2-RTt" secondAttribute="bottom" id="eS7-Ui-vdc"/>
                 <constraint firstAttribute="trailing" secondItem="ela-6Z-tdH" secondAttribute="trailing" id="f7G-3l-cPY"/>
                 <constraint firstItem="ela-6Z-tdH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hNj-Yw-1A7"/>
-                <constraint firstAttribute="bottom" secondItem="m9D-0i-yHn" secondAttribute="bottom" id="hNr-7E-b0M"/>
-                <constraint firstItem="ela-6Z-tdH" firstAttribute="height" secondItem="m9D-0i-yHn" secondAttribute="height" id="qO2-kV-ini"/>
+                <constraint firstItem="Yak-O2-RTt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nYD-FY-yES"/>
+                <constraint firstItem="Yak-O2-RTt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rlp-0t-xgf"/>
             </constraints>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <nil key="simulatedTopBarMetrics"/>
             <point key="canvasLocation" x="-130" y="27"/>
         </view>
     </objects>
+    <resources>
+        <image name="Take a Selfie.png" width="414" height="736"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -18,20 +18,42 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Customize-Outfit.png" translatesAutoresizingMaskIntoConstraints="NO" id="lI3-kC-eUS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-Hw-aZa">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <connections>
                         <action selector="writeAction" destination="-1" eventType="touchUpInside" id="fd7-3E-MkT"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gc-Ah-ZgZ">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="f8H-em-Wgz"/>
+                        <constraint firstAttribute="width" constant="70" id="zzb-sV-XzM"/>
+                    </constraints>
+                    <connections>
+                        <action selector="popAction" destination="-1" eventType="touchUpInside" id="2WD-h3-719"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Ume-Hw-aZa" secondAttribute="bottom" id="ATS-f4-jt6"/>
+                <constraint firstItem="8Gc-Ah-ZgZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LPK-GD-vhu"/>
+                <constraint firstItem="lI3-kC-eUS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LzA-oO-GSB"/>
                 <constraint firstItem="Ume-Hw-aZa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NPw-Ag-2qh"/>
                 <constraint firstItem="Ume-Hw-aZa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Nky-kD-b6m"/>
+                <constraint firstItem="lI3-kC-eUS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O3E-cu-XRa"/>
+                <constraint firstItem="8Gc-Ah-ZgZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cx5-Ug-fty"/>
+                <constraint firstAttribute="trailing" secondItem="lI3-kC-eUS" secondAttribute="trailing" id="qn9-P8-cBe"/>
+                <constraint firstAttribute="bottom" secondItem="lI3-kC-eUS" secondAttribute="bottom" id="uu5-EV-Anf"/>
                 <constraint firstAttribute="trailing" secondItem="Ume-Hw-aZa" secondAttribute="trailing" id="ypr-AT-g5g"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Customize-Outfit.png" width="414" height="736"/>
+    </resources>
 </document>

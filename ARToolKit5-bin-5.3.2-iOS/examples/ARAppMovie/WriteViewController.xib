@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,7 +17,43 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Customize-View Avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="D7R-bD-26R">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3i-GM-tzT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="popAllAction" destination="-1" eventType="touchUpInside" id="ba2-k8-mFv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pj-F9-mar">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="ap5-cZ-TP9"/>
+                        <constraint firstAttribute="height" constant="70" id="poh-QE-xZW"/>
+                    </constraints>
+                    <connections>
+                        <action selector="popAction" destination="-1" eventType="touchUpInside" id="tUf-Mj-WlL"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="D7R-bD-26R" secondAttribute="trailing" id="67V-3z-VsD"/>
+                <constraint firstAttribute="bottom" secondItem="D7R-bD-26R" secondAttribute="bottom" id="CgA-6T-sga"/>
+                <constraint firstAttribute="bottom" secondItem="w3i-GM-tzT" secondAttribute="bottom" id="GKT-qK-xlP"/>
+                <constraint firstItem="D7R-bD-26R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hru-yQ-WKf"/>
+                <constraint firstItem="w3i-GM-tzT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JCk-Gy-cE9"/>
+                <constraint firstAttribute="trailing" secondItem="w3i-GM-tzT" secondAttribute="trailing" id="MhS-OU-tPX"/>
+                <constraint firstItem="8pj-F9-mar" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tj1-23-khF"/>
+                <constraint firstItem="D7R-bD-26R" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eCP-Ct-2wO"/>
+                <constraint firstItem="w3i-GM-tzT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jIC-00-6ds"/>
+                <constraint firstItem="8pj-F9-mar" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pFz-xT-YF9"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Customize-View Avatar.png" width="414" height="736"/>
+    </resources>
 </document>

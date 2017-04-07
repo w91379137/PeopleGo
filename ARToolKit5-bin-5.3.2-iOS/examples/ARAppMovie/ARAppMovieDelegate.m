@@ -48,12 +48,22 @@
 
 #import "ARAppMovieDelegate.h"
 #import "ARViewController.h"
-
+#import "MapViewController.h"
 
 @implementation ARAppMovieDelegate
 
 @synthesize window;
 @synthesize viewController;
+
++(ARAppMovieDelegate*)shared
+{
+    return (ARAppMovieDelegate*) [[UIApplication sharedApplication] delegate];
+}
+
+-(ARViewController *)vrvc
+{
+    return viewController;
+}
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
     
@@ -62,7 +72,9 @@
     // Set working directory so that camera parameters, models etc. can be loaded using relative paths.
     arUtilChangeToResourcesDirectory(AR_UTIL_RESOURCES_DIRECTORY_BEHAVIOR_BEST, NULL);
     
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    MapViewController *vc = [[MapViewController alloc] init];
+    
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nc;
     
     [window makeKeyAndVisible];

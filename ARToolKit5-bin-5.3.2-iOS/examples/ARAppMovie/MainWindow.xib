@@ -44,71 +44,32 @@
                             <action selector="messageAction" destination="6" eventType="touchUpInside" id="V8m-To-idn"/>
                         </connections>
                     </button>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdk-IH-5ew">
-                        <rect key="frame" x="16" y="567" width="343" height="100"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojo-jc-VOy">
-                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="100"/>
-                                <state key="normal" title="Map">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="mapAction" destination="6" eventType="touchUpInside" id="XoY-HP-2eJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzc-sN-LFC">
-                                <rect key="frame" x="114.5" y="0.0" width="114" height="100"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="createAction" destination="6" eventType="touchUpInside" id="DaZ-ey-U64"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJE-FP-OLZ">
-                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="100"/>
-                                <state key="normal" title="Social">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="socialAction" destination="6" eventType="touchUpInside" id="e7s-05-XVT"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMk-Pe-wHb">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="HJE-FP-OLZ" secondAttribute="trailing" id="9Rc-cw-btV"/>
-                            <constraint firstItem="ojo-jc-VOy" firstAttribute="top" secondItem="tdk-IH-5ew" secondAttribute="top" id="H0J-KD-3bh"/>
-                            <constraint firstAttribute="height" constant="100" id="Pyv-xz-HIK"/>
-                            <constraint firstItem="Wzc-sN-LFC" firstAttribute="trailing" secondItem="HJE-FP-OLZ" secondAttribute="leading" id="ROO-7u-8MQ"/>
-                            <constraint firstAttribute="bottom" secondItem="Wzc-sN-LFC" secondAttribute="bottom" id="Z43-a9-Dbp"/>
-                            <constraint firstItem="ojo-jc-VOy" firstAttribute="trailing" secondItem="Wzc-sN-LFC" secondAttribute="leading" id="alA-qx-Boc"/>
-                            <constraint firstAttribute="bottom" secondItem="ojo-jc-VOy" secondAttribute="bottom" id="jnM-1J-sTG"/>
-                            <constraint firstItem="HJE-FP-OLZ" firstAttribute="top" secondItem="tdk-IH-5ew" secondAttribute="top" id="mRm-1V-YUS"/>
-                            <constraint firstItem="Wzc-sN-LFC" firstAttribute="width" secondItem="HJE-FP-OLZ" secondAttribute="width" id="nM0-Vg-g2B"/>
-                            <constraint firstItem="ojo-jc-VOy" firstAttribute="leading" secondItem="tdk-IH-5ew" secondAttribute="leading" id="sgg-Ic-3KT"/>
-                            <constraint firstItem="ojo-jc-VOy" firstAttribute="width" secondItem="Wzc-sN-LFC" secondAttribute="width" id="wSl-FL-oTL"/>
-                            <constraint firstAttribute="bottom" secondItem="HJE-FP-OLZ" secondAttribute="bottom" id="wfN-gP-amC"/>
-                            <constraint firstItem="Wzc-sN-LFC" firstAttribute="top" secondItem="tdk-IH-5ew" secondAttribute="top" id="z3A-aA-era"/>
+                            <constraint firstAttribute="width" constant="70" id="Ejx-Je-hCn"/>
+                            <constraint firstAttribute="height" constant="70" id="k0G-eM-wlc"/>
                         </constraints>
-                    </view>
+                        <connections>
+                            <action selector="popAction" destination="6" eventType="touchUpInside" id="xyR-Qk-HVF"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="647-ZL-lgg" firstAttribute="top" secondItem="tdk-IH-5ew" secondAttribute="bottom" id="0zw-0O-Hqb"/>
+                    <constraint firstItem="fMk-Pe-wHb" firstAttribute="leading" secondItem="gtQ-uL-rse" secondAttribute="leading" id="2OC-8m-8vg"/>
+                    <constraint firstItem="fMk-Pe-wHb" firstAttribute="top" secondItem="wtb-hH-Eqb" secondAttribute="bottom" id="8tK-q0-dCg"/>
                     <constraint firstItem="DAm-5n-RWo" firstAttribute="leading" secondItem="gtQ-uL-rse" secondAttribute="leadingMargin" id="C4a-zS-f36"/>
                     <constraint firstItem="647-ZL-lgg" firstAttribute="top" secondItem="DAm-5n-RWo" secondAttribute="bottom" id="EA6-o4-Nzg"/>
-                    <constraint firstItem="tdk-IH-5ew" firstAttribute="leading" secondItem="gtQ-uL-rse" secondAttribute="leadingMargin" id="Pyk-eW-9J2"/>
                     <constraint firstItem="DAm-5n-RWo" firstAttribute="top" secondItem="wtb-hH-Eqb" secondAttribute="bottom" id="ja5-fg-mwa"/>
                     <constraint firstAttribute="trailingMargin" secondItem="DAm-5n-RWo" secondAttribute="trailing" id="nvi-ly-cqO"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="tdk-IH-5ew" secondAttribute="trailing" id="rBD-gI-o0u"/>
                 </constraints>
             </view>
             <extendedEdge key="edgesForExtendedLayout"/>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
+                <outlet property="backButton" destination="fMk-Pe-wHb" id="yna-tn-8CW"/>
                 <outlet property="centerButton" destination="DAm-5n-RWo" id="QwE-qJ-4zf"/>
-                <outlet property="controlView" destination="tdk-IH-5ew" id="l8p-D4-pj9"/>
                 <outlet property="view" destination="gtQ-uL-rse" id="AOW-Xb-Mh1"/>
             </connections>
             <point key="canvasLocation" x="44" y="34"/>

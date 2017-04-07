@@ -22,22 +22,61 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map.png" translatesAutoresizingMaskIntoConstraints="NO" id="7a8-PP-xkv">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVB-Cu-O8I">
-                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nte-AZ-1FG">
+                    <rect key="frame" x="16" y="567" width="343" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YQ-GZ-hOF">
+                            <rect key="frame" x="0.0" y="0.0" width="114.5" height="100"/>
+                            <state key="normal" title="Find">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="findAction" destination="-1" eventType="touchUpInside" id="jnW-o8-H0t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rte-u5-Bv8">
+                            <rect key="frame" x="114.5" y="0.0" width="114" height="100"/>
+                            <state key="normal" title="+">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="createAction" destination="-1" eventType="touchUpInside" id="Co2-eS-cNk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iff-Mu-OJ0">
+                            <rect key="frame" x="228.5" y="0.0" width="114.5" height="100"/>
+                            <state key="normal" title="Social">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="socialAction" destination="-1" eventType="touchUpInside" id="oZD-ia-oVn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="70" id="hhi-Wa-XKb"/>
-                        <constraint firstAttribute="height" constant="70" id="lyS-QK-oP9"/>
+                        <constraint firstItem="Iff-Mu-OJ0" firstAttribute="top" secondItem="Nte-AZ-1FG" secondAttribute="top" id="7ly-xB-IQx"/>
+                        <constraint firstItem="1YQ-GZ-hOF" firstAttribute="top" secondItem="Nte-AZ-1FG" secondAttribute="top" id="Ckq-j8-AhS"/>
+                        <constraint firstItem="1YQ-GZ-hOF" firstAttribute="width" secondItem="rte-u5-Bv8" secondAttribute="width" id="D4u-1d-cQS"/>
+                        <constraint firstAttribute="trailing" secondItem="Iff-Mu-OJ0" secondAttribute="trailing" id="Izq-if-3Tl"/>
+                        <constraint firstItem="rte-u5-Bv8" firstAttribute="trailing" secondItem="Iff-Mu-OJ0" secondAttribute="leading" id="Jod-eN-esZ"/>
+                        <constraint firstItem="1YQ-GZ-hOF" firstAttribute="trailing" secondItem="rte-u5-Bv8" secondAttribute="leading" id="NXS-q9-n2p"/>
+                        <constraint firstAttribute="bottom" secondItem="rte-u5-Bv8" secondAttribute="bottom" id="U2i-mQ-PjY"/>
+                        <constraint firstAttribute="height" constant="100" id="YRk-DP-daK"/>
+                        <constraint firstAttribute="bottom" secondItem="1YQ-GZ-hOF" secondAttribute="bottom" id="ZrQ-Qn-Xf6"/>
+                        <constraint firstItem="1YQ-GZ-hOF" firstAttribute="leading" secondItem="Nte-AZ-1FG" secondAttribute="leading" id="lVq-Jy-Pzc"/>
+                        <constraint firstItem="rte-u5-Bv8" firstAttribute="width" secondItem="Iff-Mu-OJ0" secondAttribute="width" id="mo8-G6-Xb1"/>
+                        <constraint firstItem="rte-u5-Bv8" firstAttribute="top" secondItem="Nte-AZ-1FG" secondAttribute="top" id="tVq-H2-gOr"/>
+                        <constraint firstAttribute="bottom" secondItem="Iff-Mu-OJ0" secondAttribute="bottom" id="yJr-BL-tsB"/>
                     </constraints>
-                    <connections>
-                        <action selector="popAction" destination="-1" eventType="touchUpInside" id="YZl-yO-wPn"/>
-                    </connections>
-                </button>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="QVB-Cu-O8I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Su-Tr-SSd"/>
-                <constraint firstItem="QVB-Cu-O8I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9Ct-mB-6tb"/>
+                <constraint firstItem="Nte-AZ-1FG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="8qK-bn-prG"/>
                 <constraint firstAttribute="bottom" secondItem="7a8-PP-xkv" secondAttribute="bottom" id="IUM-1x-flR"/>
+                <constraint firstAttribute="trailing" secondItem="Nte-AZ-1FG" secondAttribute="trailing" constant="16" id="NLc-ko-LBI"/>
+                <constraint firstAttribute="bottom" secondItem="Nte-AZ-1FG" secondAttribute="bottom" id="Zkp-J5-WMr"/>
                 <constraint firstItem="7a8-PP-xkv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dpd-5x-pvV"/>
                 <constraint firstItem="7a8-PP-xkv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qNm-wh-o9b"/>
                 <constraint firstAttribute="trailing" secondItem="7a8-PP-xkv" secondAttribute="trailing" id="ukz-Xv-eh2"/>

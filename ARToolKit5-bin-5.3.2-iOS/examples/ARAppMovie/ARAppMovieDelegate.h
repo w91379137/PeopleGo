@@ -56,4 +56,7 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet ARViewController *viewController;
 
++(ARAppMovieDelegate*)shared;
+-(ARViewController *)vrvc;
+
 @end

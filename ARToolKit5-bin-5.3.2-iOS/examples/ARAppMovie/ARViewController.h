@@ -66,7 +66,7 @@
 
 @interface ARViewController : UIViewController <CameraVideoTookPictureDelegate> {
     IBOutlet UIButton *centerButton;
-    IBOutlet UIView *controlView;
+    IBOutlet UIButton *backButton;
 }
 
 - (IBAction)start;

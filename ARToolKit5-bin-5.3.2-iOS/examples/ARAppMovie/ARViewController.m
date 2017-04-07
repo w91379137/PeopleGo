@@ -52,9 +52,6 @@
 #import "../ARAppCore/ARMarkerMulti.h"
 
 #import "MessageViewController.h"
-#import "MapViewController.h"
-#import "SelectViewController.h"
-#import "SocialViewController.h"
 
 #define VIEW_DISTANCE_MIN        5.0f          // Objects closer to the camera than this will not be displayed.
 #define VIEW_DISTANCE_MAX        2000.0f        // Objects further away from the camera than this will not be displayed.
@@ -363,7 +360,7 @@ static void startCallback(void *userData)
     glView.arViewController = self;
     [self.view addSubview:glView];
     [self.view bringSubviewToFront:centerButton];
-    [self.view bringSubviewToFront:controlView];
+    [self.view bringSubviewToFront:backButton];
     
     // Create the OpenGL projection from the calibrated camera parameters.
     // If flipV is set, flip.
@@ -577,22 +574,9 @@ static void startCallback(void *userData)
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (IBAction)mapAction
+- (IBAction)popAction
 {
-    MapViewController *vc = [[MapViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (IBAction)createAction
-{
-    SelectViewController *vc = [[SelectViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (IBAction)socialAction
-{
-    SocialViewController *vc = [[SocialViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

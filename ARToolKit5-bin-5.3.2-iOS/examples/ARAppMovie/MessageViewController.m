@@ -27,7 +27,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBarHidden = YES;
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -56,6 +56,27 @@
 {
     [webView loadHTMLString:@"" baseURL:nil];
     [super viewWillDisappear:animated];
+}
+
+#pragma mark - IBAction
+- (IBAction)shareAction
+{
+    NSURL *url = [NSURL URLWithString:@"https://www.youtube.com/watch?v=nJkhLNadub8"];
+    NSArray *objectsToShare = @[url];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
+    
+    NSArray *excludeActivities = @[UIActivityTypeAirDrop,
+                                   UIActivityTypePrint,
+                                   UIActivityTypeAssignToContact,
+                                   UIActivityTypeSaveToCameraRoll,
+                                   UIActivityTypeAddToReadingList,
+                                   UIActivityTypePostToFlickr,
+                                   UIActivityTypePostToVimeo];
+    
+    activityVC.excludedActivityTypes = excludeActivities;
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 @end

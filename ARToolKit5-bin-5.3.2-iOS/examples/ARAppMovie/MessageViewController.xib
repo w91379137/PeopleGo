@@ -20,15 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usF-pD-TTc">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Collection-View Profile Copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="g0X-Cf-fJM">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usF-pD-TTc">
+                    <rect key="frame" x="0.0" y="64" width="375" height="403"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </webView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCm-ud-1iN">
-                    <rect key="frame" x="163.5" y="613" width="47" height="34"/>
-                    <state key="normal" title="Share">
+                    <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="1Cw-jq-7b9"/>
+                    </constraints>
+                    <state key="normal">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="shareAction" destination="-1" eventType="touchUpInside" id="lEN-f6-iwn"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3h-Sw-Zgg">
                     <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -36,23 +45,34 @@
                         <constraint firstAttribute="width" constant="70" id="76M-c2-ZjD"/>
                         <constraint firstAttribute="height" constant="70" id="IT9-Ab-nYl"/>
                     </constraints>
+                    <connections>
+                        <action selector="popAction" destination="-1" eventType="touchUpInside" id="IOP-Ht-XP4"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.50980392159999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="usF-pD-TTc" secondAttribute="bottom" id="3jY-UA-5kl"/>
-                <constraint firstAttribute="bottom" secondItem="gCm-ud-1iN" secondAttribute="bottom" constant="20" id="KhC-eX-tLZ"/>
+                <constraint firstAttribute="bottom" secondItem="usF-pD-TTc" secondAttribute="bottom" constant="200" id="3jY-UA-5kl"/>
+                <constraint firstItem="g0X-Cf-fJM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="90Y-cV-g03"/>
+                <constraint firstAttribute="bottom" secondItem="g0X-Cf-fJM" secondAttribute="bottom" id="DsI-cU-cE3"/>
+                <constraint firstAttribute="trailing" secondItem="gCm-ud-1iN" secondAttribute="trailing" id="FJ5-sE-icd"/>
+                <constraint firstAttribute="bottom" secondItem="gCm-ud-1iN" secondAttribute="bottom" id="KhC-eX-tLZ"/>
                 <constraint firstItem="L3h-Sw-Zgg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PaN-2M-ozu"/>
+                <constraint firstAttribute="trailing" secondItem="g0X-Cf-fJM" secondAttribute="trailing" id="Tnp-Hk-tXC"/>
                 <constraint firstItem="L3h-Sw-Zgg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YYr-mq-K7Y"/>
+                <constraint firstItem="gCm-ud-1iN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eSJ-fb-bKf"/>
                 <constraint firstItem="usF-pD-TTc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gJw-4m-Uhw"/>
-                <constraint firstItem="usF-pD-TTc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hTM-Dj-IzE"/>
-                <constraint firstItem="gCm-ud-1iN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hge-Lg-8At"/>
+                <constraint firstItem="usF-pD-TTc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="hTM-Dj-IzE"/>
                 <constraint firstAttribute="trailing" secondItem="usF-pD-TTc" secondAttribute="trailing" id="qjF-Y8-xEu"/>
+                <constraint firstItem="g0X-Cf-fJM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wde-C7-MQv"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <point key="canvasLocation" x="-199" y="32"/>
         </view>
     </objects>
+    <resources>
+        <image name="Collection-View Profile Copy.png" width="414" height="736"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

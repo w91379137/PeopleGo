@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ela-6Z-tdH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                    <state key="normal" title="Photos">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="adjustAction" destination="-1" eventType="touchUpInside" id="9EZ-zk-RgE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9D-0i-yHn">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                    <state key="normal" title="Take One">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="adjustAction" destination="-1" eventType="touchUpInside" id="GO5-Gv-hnh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ela-6Z-tdH" firstAttribute="bottom" secondItem="m9D-0i-yHn" secondAttribute="top" id="DDb-3a-heU"/>
+                <constraint firstAttribute="trailing" secondItem="m9D-0i-yHn" secondAttribute="trailing" id="Nix-RC-1lK"/>
+                <constraint firstItem="ela-6Z-tdH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QvR-2T-KQb"/>
+                <constraint firstItem="m9D-0i-yHn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eeK-b1-z4q"/>
+                <constraint firstAttribute="trailing" secondItem="ela-6Z-tdH" secondAttribute="trailing" id="f7G-3l-cPY"/>
+                <constraint firstItem="ela-6Z-tdH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hNj-Yw-1A7"/>
+                <constraint firstAttribute="bottom" secondItem="m9D-0i-yHn" secondAttribute="bottom" id="hNr-7E-b0M"/>
+                <constraint firstItem="ela-6Z-tdH" firstAttribute="height" secondItem="m9D-0i-yHn" secondAttribute="height" id="qO2-kV-ini"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="-130" y="27"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

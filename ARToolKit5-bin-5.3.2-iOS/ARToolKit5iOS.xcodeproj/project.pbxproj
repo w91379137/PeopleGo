@@ -928,6 +928,16 @@
 		F8A058D01E9649AF0012F7A8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */; };
 		F8A058D11E964C950012F7A8 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */; };
 		F8A058D21E964C9B0012F7A8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */; };
+		F8D1DCEB1E972CDF004BE599 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCE81E972CC2004BE599 /* SelectViewController.m */; };
+		F8D1DCEC1E972CDF004BE599 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */; };
+		F8D1DCF01E972E65004BE599 /* AdjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCEE1E972E65004BE599 /* AdjustViewController.m */; };
+		F8D1DCF11E972E65004BE599 /* AdjustViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D1DCEF1E972E65004BE599 /* AdjustViewController.xib */; };
+		F8D1DCF51E972F1E004BE599 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCF31E972F1E004BE599 /* MapViewController.m */; };
+		F8D1DCF61E972F1E004BE599 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D1DCF41E972F1E004BE599 /* MapViewController.xib */; };
+		F8D1DCFA1E972F88004BE599 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCF81E972F88004BE599 /* SocialViewController.m */; };
+		F8D1DCFB1E972F88004BE599 /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D1DCF91E972F88004BE599 /* SocialViewController.xib */; };
+		F8D1DCFF1E972FA4004BE599 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCFD1E972FA4004BE599 /* DetailsViewController.m */; };
+		F8D1DD001E972FA4004BE599 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D1DCFE1E972FA4004BE599 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3319,6 +3329,21 @@
 		F8A058CD1E9649AF0012F7A8 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		F8D1DCE71E972CC2004BE599 /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
+		F8D1DCE81E972CC2004BE599 /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
+		F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
+		F8D1DCED1E972E65004BE599 /* AdjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustViewController.h; sourceTree = "<group>"; };
+		F8D1DCEE1E972E65004BE599 /* AdjustViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustViewController.m; sourceTree = "<group>"; };
+		F8D1DCEF1E972E65004BE599 /* AdjustViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdjustViewController.xib; sourceTree = "<group>"; };
+		F8D1DCF21E972F1E004BE599 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		F8D1DCF31E972F1E004BE599 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		F8D1DCF41E972F1E004BE599 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		F8D1DCF71E972F88004BE599 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		F8D1DCF81E972F88004BE599 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		F8D1DCF91E972F88004BE599 /* SocialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
+		F8D1DCFC1E972FA4004BE599 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		F8D1DCFD1E972FA4004BE599 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		F8D1DCFE1E972FA4004BE599 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -6655,6 +6680,12 @@
 		F8316B271E968BA400B566C0 /* CreatePart */ = {
 			isa = PBXGroup;
 			children = (
+				F8D1DCE71E972CC2004BE599 /* SelectViewController.h */,
+				F8D1DCE81E972CC2004BE599 /* SelectViewController.m */,
+				F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */,
+				F8D1DCED1E972E65004BE599 /* AdjustViewController.h */,
+				F8D1DCEE1E972E65004BE599 /* AdjustViewController.m */,
+				F8D1DCEF1E972E65004BE599 /* AdjustViewController.xib */,
 			);
 			name = CreatePart;
 			sourceTree = "<group>";
@@ -6668,6 +6699,15 @@
 				F8A058CD1E9649AF0012F7A8 /* MessageViewController.h */,
 				F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */,
 				F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */,
+				F8D1DCF21E972F1E004BE599 /* MapViewController.h */,
+				F8D1DCF31E972F1E004BE599 /* MapViewController.m */,
+				F8D1DCF41E972F1E004BE599 /* MapViewController.xib */,
+				F8D1DCF71E972F88004BE599 /* SocialViewController.h */,
+				F8D1DCF81E972F88004BE599 /* SocialViewController.m */,
+				F8D1DCF91E972F88004BE599 /* SocialViewController.xib */,
+				F8D1DCFC1E972FA4004BE599 /* DetailsViewController.h */,
+				F8D1DCFD1E972FA4004BE599 /* DetailsViewController.m */,
+				F8D1DCFE1E972FA4004BE599 /* DetailsViewController.xib */,
 			);
 			name = SearchPart;
 			sourceTree = "<group>";
@@ -7392,12 +7432,15 @@
 				4A5BAA9813D82FB100C8D5E7 /* MainWindow-iPad.xib in Resources */,
 				4A5BAA9913D82FB100C8D5E7 /* MainWindow.xib in Resources */,
 				4A5BAA9B13D82FC500C8D5E7 /* Data2 in Resources */,
+				F8D1DCFB1E972F88004BE599 /* SocialViewController.xib in Resources */,
 				4AF6EFA113DCF78700F77FB0 /* Icon-72.png in Resources */,
 				4AF6EFA213DCF78700F77FB0 /* Icon-Small-50.png in Resources */,
+				F8D1DD001E972FA4004BE599 /* DetailsViewController.xib in Resources */,
 				4AF6EFA313DCF78700F77FB0 /* Icon-Small.png in Resources */,
 				4AF6EFA413DCF78700F77FB0 /* Icon-Small@2x.png in Resources */,
 				4AF6EFA513DCF78700F77FB0 /* Icon.png in Resources */,
 				4AF6EFA613DCF78700F77FB0 /* Icon@2x.png in Resources */,
+				F8D1DCEC1E972CDF004BE599 /* SelectViewController.xib in Resources */,
 				4AA8B58E161AD60D00B48D70 /* Default-568h@2x.png in Resources */,
 				4AA8B58F161AD60D00B48D70 /* Default-LandscapeLeft.png in Resources */,
 				4AA8B590161AD60D00B48D70 /* Default-LandscapeLeft@2x.png in Resources */,
@@ -7410,8 +7453,10 @@
 				4AA8B597161AD60D00B48D70 /* Default.png in Resources */,
 				4AA8B598161AD60D00B48D70 /* Default@2x.png in Resources */,
 				4AA8B5DA161AEDDE00B48D70 /* Iris-568h@2x.png in Resources */,
+				F8D1DCF11E972E65004BE599 /* AdjustViewController.xib in Resources */,
 				F8A058D11E964C950012F7A8 /* MessageViewController.xib in Resources */,
 				4AA8B5DB161AEDDE00B48D70 /* Iris-iPad.png in Resources */,
+				F8D1DCF61E972F1E004BE599 /* MapViewController.xib in Resources */,
 				4AA8B5DC161AEDDE00B48D70 /* Iris-iPad@2x.png in Resources */,
 				4AA8B5DD161AEDDE00B48D70 /* Iris@2x.png in Resources */,
 			);
@@ -7689,13 +7734,18 @@
 				4A33B6E718ADBA2E0028A979 /* ARMarkerSquare.m in Sources */,
 				4A33B6DA18ADB97A0028A979 /* VEObject.m in Sources */,
 				4A33B6D518ADB95F0028A979 /* VEObjectMovie.m in Sources */,
+				F8D1DCF01E972E65004BE599 /* AdjustViewController.m in Sources */,
 				4A33B6DF18ADB9A30028A979 /* VirtualEnvironment.m in Sources */,
 				F8A058D21E964C9B0012F7A8 /* MessageViewController.m in Sources */,
 				4A33B6CA18ADB86F0028A979 /* EAGLView.m in Sources */,
 				4A5BAAA513D82FFA00C8D5E7 /* ARViewController.m in Sources */,
+				F8D1DCFF1E972FA4004BE599 /* DetailsViewController.m in Sources */,
+				F8D1DCEB1E972CDF004BE599 /* SelectViewController.m in Sources */,
 				4A5BAAA613D82FFA00C8D5E7 /* main.m in Sources */,
+				F8D1DCF51E972F1E004BE599 /* MapViewController.m in Sources */,
 				4A33B70B18ADC8700028A979 /* ARView.m in Sources */,
 				4A33B6EC18ADBA520028A979 /* ARMarker.m in Sources */,
+				F8D1DCFA1E972F88004BE599 /* SocialViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

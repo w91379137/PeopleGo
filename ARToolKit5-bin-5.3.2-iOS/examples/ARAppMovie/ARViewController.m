@@ -50,7 +50,11 @@
 #import <AR/gsub_es.h>
 #import "../ARAppCore/ARMarkerSquare.h"
 #import "../ARAppCore/ARMarkerMulti.h"
+
 #import "MessageViewController.h"
+#import "MapViewController.h"
+#import "SelectViewController.h"
+#import "SocialViewController.h"
 
 #define VIEW_DISTANCE_MIN        5.0f          // Objects closer to the camera than this will not be displayed.
 #define VIEW_DISTANCE_MAX        2000.0f        // Objects further away from the camera than this will not be displayed.
@@ -575,19 +579,19 @@ static void startCallback(void *userData)
 
 - (IBAction)mapAction
 {
-    MessageViewController *vc = [[MessageViewController alloc] init];
+    MapViewController *vc = [[MapViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)createAction
 {
-    MessageViewController *vc = [[MessageViewController alloc] init];
+    SelectViewController *vc = [[SelectViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)socialAction
 {
-    MessageViewController *vc = [[MessageViewController alloc] init];
+    SocialViewController *vc = [[SocialViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

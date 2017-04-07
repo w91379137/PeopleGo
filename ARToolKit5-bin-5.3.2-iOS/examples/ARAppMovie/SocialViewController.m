@@ -7,6 +7,7 @@
 //
 
 #import "SocialViewController.h"
+#import "DetailsViewController.h"
 
 @interface SocialViewController ()
 
@@ -25,6 +26,13 @@
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
+}
+
+#pragma mark - IBAction
+- (IBAction)detailsAction
+{
+    DetailsViewController *vc = [[DetailsViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

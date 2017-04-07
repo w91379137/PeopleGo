@@ -19,6 +19,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Collection.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zfg-nK-mfB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGR-KL-oEW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="detailsAction" destination="-1" eventType="touchUpInside" id="Ogf-jO-M0R"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dU-nv-ewg">
                     <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                     <constraints>
@@ -32,9 +41,20 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="dGR-KL-oEW" secondAttribute="trailing" id="2IW-Kt-uXd"/>
+                <constraint firstItem="dGR-KL-oEW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8EV-tt-c3K"/>
+                <constraint firstAttribute="trailing" secondItem="Zfg-nK-mfB" secondAttribute="trailing" id="Fl0-jz-TmA"/>
+                <constraint firstItem="dGR-KL-oEW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LqX-Nt-pGB"/>
+                <constraint firstAttribute="bottom" secondItem="Zfg-nK-mfB" secondAttribute="bottom" id="ORC-cV-hAd"/>
                 <constraint firstItem="8dU-nv-ewg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ynl-UA-Z3j"/>
                 <constraint firstItem="8dU-nv-ewg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Yv1-39-fQu"/>
+                <constraint firstItem="Zfg-nK-mfB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jwZ-Ng-Azz"/>
+                <constraint firstItem="Zfg-nK-mfB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wzW-Js-qae"/>
+                <constraint firstAttribute="bottom" secondItem="dGR-KL-oEW" secondAttribute="bottom" id="xEE-dl-SHj"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Collection.png" width="414" height="736"/>
+    </resources>
 </document>

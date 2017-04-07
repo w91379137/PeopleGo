@@ -23,11 +23,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nte-AZ-1FG">
-                    <rect key="frame" x="16" y="567" width="343" height="100"/>
+                    <rect key="frame" x="0.0" y="567" width="375" height="100"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YQ-GZ-hOF">
-                            <rect key="frame" x="0.0" y="0.0" width="114.5" height="100"/>
-                            <state key="normal" title="Find">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                            <state key="normal">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -35,8 +35,8 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rte-u5-Bv8">
-                            <rect key="frame" x="114.5" y="0.0" width="114" height="100"/>
-                            <state key="normal" title="+">
+                            <rect key="frame" x="125" y="0.0" width="125" height="100"/>
+                            <state key="normal">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -44,8 +44,8 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iff-Mu-OJ0">
-                            <rect key="frame" x="228.5" y="0.0" width="114.5" height="100"/>
-                            <state key="normal" title="Social">
+                            <rect key="frame" x="250" y="0.0" width="125" height="100"/>
+                            <state key="normal">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -73,9 +73,9 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Nte-AZ-1FG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="8qK-bn-prG"/>
+                <constraint firstItem="Nte-AZ-1FG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8qK-bn-prG"/>
                 <constraint firstAttribute="bottom" secondItem="7a8-PP-xkv" secondAttribute="bottom" id="IUM-1x-flR"/>
-                <constraint firstAttribute="trailing" secondItem="Nte-AZ-1FG" secondAttribute="trailing" constant="16" id="NLc-ko-LBI"/>
+                <constraint firstAttribute="trailing" secondItem="Nte-AZ-1FG" secondAttribute="trailing" id="NLc-ko-LBI"/>
                 <constraint firstAttribute="bottom" secondItem="Nte-AZ-1FG" secondAttribute="bottom" id="Zkp-J5-WMr"/>
                 <constraint firstItem="7a8-PP-xkv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dpd-5x-pvV"/>
                 <constraint firstItem="7a8-PP-xkv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qNm-wh-o9b"/>
@@ -84,6 +84,6 @@
         </view>
     </objects>
     <resources>
-        <image name="map.png" width="785" height="1376"/>
+        <image name="map.png" width="750" height="1334"/>
     </resources>
 </document>

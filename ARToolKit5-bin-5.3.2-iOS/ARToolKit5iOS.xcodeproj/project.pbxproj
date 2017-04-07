@@ -939,6 +939,8 @@
 		F8BF35BE1E973F5800C2B7BA /* WriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35BA1E973F5800C2B7BA /* WriteViewController.xib */; };
 		F8BF35C11E973FCA00C2B7BA /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF35C01E973FCA00C2B7BA /* BasicViewController.m */; };
 		F8BF35C21E973FCA00C2B7BA /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF35C01E973FCA00C2B7BA /* BasicViewController.m */; };
+		F8BF35C41E9771BD00C2B7BA /* Collection.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35C31E9771BD00C2B7BA /* Collection.png */; };
+		F8BF35C61E97722100C2B7BA /* Collection-View Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35C51E97722100C2B7BA /* Collection-View Profile.png */; };
 		F8D1DCEB1E972CDF004BE599 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCE81E972CC2004BE599 /* SelectViewController.m */; };
 		F8D1DCEC1E972CDF004BE599 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */; };
 		F8D1DCF01E972E65004BE599 /* AdjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCEE1E972E65004BE599 /* AdjustViewController.m */; };
@@ -3349,6 +3351,8 @@
 		F8BF35BA1E973F5800C2B7BA /* WriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WriteViewController.xib; sourceTree = "<group>"; };
 		F8BF35BF1E973FCA00C2B7BA /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
 		F8BF35C01E973FCA00C2B7BA /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		F8BF35C31E9771BD00C2B7BA /* Collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Collection.png; sourceTree = "<group>"; };
+		F8BF35C51E97722100C2B7BA /* Collection-View Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collection-View Profile.png"; sourceTree = "<group>"; };
 		F8D1DCE71E972CC2004BE599 /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
 		F8D1DCE81E972CC2004BE599 /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
 		F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
@@ -6734,9 +6738,11 @@
 				F8D1DCF71E972F88004BE599 /* SocialViewController.h */,
 				F8D1DCF81E972F88004BE599 /* SocialViewController.m */,
 				F8D1DCF91E972F88004BE599 /* SocialViewController.xib */,
+				F8BF35C31E9771BD00C2B7BA /* Collection.png */,
 				F8D1DCFC1E972FA4004BE599 /* DetailsViewController.h */,
 				F8D1DCFD1E972FA4004BE599 /* DetailsViewController.m */,
 				F8D1DCFE1E972FA4004BE599 /* DetailsViewController.xib */,
+				F8BF35C51E97722100C2B7BA /* Collection-View Profile.png */,
 			);
 			name = SearchPart;
 			sourceTree = "<group>";
@@ -7457,12 +7463,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BF35C41E9771BD00C2B7BA /* Collection.png in Resources */,
 				4A5BAA9713D82FB100C8D5E7 /* Iris.png in Resources */,
 				4A5BAA9813D82FB100C8D5E7 /* MainWindow-iPad.xib in Resources */,
 				4A5BAA9913D82FB100C8D5E7 /* MainWindow.xib in Resources */,
 				F8BF35B71E973AA700C2B7BA /* PoseViewController.xib in Resources */,
 				4A5BAA9B13D82FC500C8D5E7 /* Data2 in Resources */,
 				F8D1DCFB1E972F88004BE599 /* SocialViewController.xib in Resources */,
+				F8BF35C61E97722100C2B7BA /* Collection-View Profile.png in Resources */,
 				4AF6EFA113DCF78700F77FB0 /* Icon-72.png in Resources */,
 				4AF6EFA213DCF78700F77FB0 /* Icon-Small-50.png in Resources */,
 				F8D1DD001E972FA4004BE599 /* DetailsViewController.xib in Resources */,

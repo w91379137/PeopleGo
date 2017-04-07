@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SocialViewController : UIViewController
+@interface SocialViewController : BasicViewController
 
 @end

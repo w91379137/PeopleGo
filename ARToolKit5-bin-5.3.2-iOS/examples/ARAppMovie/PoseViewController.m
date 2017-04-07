@@ -1,25 +1,25 @@
 //
-//  AdjustViewController.m
+//  PoseViewController.m
 //  ARToolKit5iOS
 //
 //  Created by w91379137 on 2017/4/7.
 //
 //
 
-#import "AdjustViewController.h"
 #import "PoseViewController.h"
+#import "WriteViewController.h"
 
-@interface AdjustViewController ()
+@interface PoseViewController ()
 
 @end
 
-@implementation AdjustViewController
+@implementation PoseViewController
 
 #pragma mark - Life Cycle
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Adjust";
+    self.title = @"Pose";
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -29,9 +29,9 @@
 }
 
 #pragma mark - IBAction
-- (IBAction)poseAction
+- (IBAction)writeAction
 {
-    PoseViewController *vc = [[PoseViewController alloc] init];
+    WriteViewController *vc = [[WriteViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

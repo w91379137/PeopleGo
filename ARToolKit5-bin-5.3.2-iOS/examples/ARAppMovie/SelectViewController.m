@@ -31,7 +31,8 @@
 #pragma mark - IBAction
 - (IBAction)adjustAction
 {
-    
+    AdjustViewController *vc = [[AdjustViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

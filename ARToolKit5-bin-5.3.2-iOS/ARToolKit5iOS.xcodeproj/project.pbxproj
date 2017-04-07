@@ -928,6 +928,17 @@
 		F8A058D01E9649AF0012F7A8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */; };
 		F8A058D11E964C950012F7A8 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */; };
 		F8A058D21E964C9B0012F7A8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */; };
+		F8BF35B01E9737C500C2B7BA /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35AE1E9737C000C2B7BA /* map.png */; };
+		F8BF35B41E973AA700C2B7BA /* PoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF35B21E973AA700C2B7BA /* PoseViewController.m */; };
+		F8BF35B51E973AA700C2B7BA /* PoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF35B21E973AA700C2B7BA /* PoseViewController.m */; };
+		F8BF35B61E973AA700C2B7BA /* PoseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35B31E973AA700C2B7BA /* PoseViewController.xib */; };
+		F8BF35B71E973AA700C2B7BA /* PoseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35B31E973AA700C2B7BA /* PoseViewController.xib */; };
+		F8BF35BB1E973F5800C2B7BA /* WriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF35B91E973F5800C2B7BA /* WriteViewController.m */; };
+		F8BF35BC1E973F5800C2B7BA /* WriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF35B91E973F5800C2B7BA /* WriteViewController.m */; };
+		F8BF35BD1E973F5800C2B7BA /* WriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35BA1E973F5800C2B7BA /* WriteViewController.xib */; };
+		F8BF35BE1E973F5800C2B7BA /* WriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BF35BA1E973F5800C2B7BA /* WriteViewController.xib */; };
+		F8BF35C11E973FCA00C2B7BA /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF35C01E973FCA00C2B7BA /* BasicViewController.m */; };
+		F8BF35C21E973FCA00C2B7BA /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF35C01E973FCA00C2B7BA /* BasicViewController.m */; };
 		F8D1DCEB1E972CDF004BE599 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCE81E972CC2004BE599 /* SelectViewController.m */; };
 		F8D1DCEC1E972CDF004BE599 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */; };
 		F8D1DCF01E972E65004BE599 /* AdjustViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1DCEE1E972E65004BE599 /* AdjustViewController.m */; };
@@ -3329,6 +3340,15 @@
 		F8A058CD1E9649AF0012F7A8 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		F8A058CE1E9649AF0012F7A8 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		F8A058CF1E9649AF0012F7A8 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		F8BF35AE1E9737C000C2B7BA /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		F8BF35B11E973AA700C2B7BA /* PoseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseViewController.h; sourceTree = "<group>"; };
+		F8BF35B21E973AA700C2B7BA /* PoseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoseViewController.m; sourceTree = "<group>"; };
+		F8BF35B31E973AA700C2B7BA /* PoseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoseViewController.xib; sourceTree = "<group>"; };
+		F8BF35B81E973F5800C2B7BA /* WriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteViewController.h; sourceTree = "<group>"; };
+		F8BF35B91E973F5800C2B7BA /* WriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteViewController.m; sourceTree = "<group>"; };
+		F8BF35BA1E973F5800C2B7BA /* WriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WriteViewController.xib; sourceTree = "<group>"; };
+		F8BF35BF1E973FCA00C2B7BA /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		F8BF35C01E973FCA00C2B7BA /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
 		F8D1DCE71E972CC2004BE599 /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
 		F8D1DCE81E972CC2004BE599 /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
 		F8D1DCE91E972CC2004BE599 /* SelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
@@ -4239,6 +4259,8 @@
 			children = (
 				4A0619B413D59DF10066826B /* ARAppMovieDelegate.h */,
 				4A0619B513D59DF10066826B /* ARAppMovieDelegate.m */,
+				F8BF35BF1E973FCA00C2B7BA /* BasicViewController.h */,
+				F8BF35C01E973FCA00C2B7BA /* BasicViewController.m */,
 				F8316B271E968BA400B566C0 /* CreatePart */,
 				F8316B281E968BB600B566C0 /* SearchPart */,
 			);
@@ -6686,6 +6708,12 @@
 				F8D1DCED1E972E65004BE599 /* AdjustViewController.h */,
 				F8D1DCEE1E972E65004BE599 /* AdjustViewController.m */,
 				F8D1DCEF1E972E65004BE599 /* AdjustViewController.xib */,
+				F8BF35B11E973AA700C2B7BA /* PoseViewController.h */,
+				F8BF35B21E973AA700C2B7BA /* PoseViewController.m */,
+				F8BF35B31E973AA700C2B7BA /* PoseViewController.xib */,
+				F8BF35B81E973F5800C2B7BA /* WriteViewController.h */,
+				F8BF35B91E973F5800C2B7BA /* WriteViewController.m */,
+				F8BF35BA1E973F5800C2B7BA /* WriteViewController.xib */,
 			);
 			name = CreatePart;
 			sourceTree = "<group>";
@@ -6702,6 +6730,7 @@
 				F8D1DCF21E972F1E004BE599 /* MapViewController.h */,
 				F8D1DCF31E972F1E004BE599 /* MapViewController.m */,
 				F8D1DCF41E972F1E004BE599 /* MapViewController.xib */,
+				F8BF35AE1E9737C000C2B7BA /* map.png */,
 				F8D1DCF71E972F88004BE599 /* SocialViewController.h */,
 				F8D1DCF81E972F88004BE599 /* SocialViewController.m */,
 				F8D1DCF91E972F88004BE599 /* SocialViewController.xib */,
@@ -7431,6 +7460,7 @@
 				4A5BAA9713D82FB100C8D5E7 /* Iris.png in Resources */,
 				4A5BAA9813D82FB100C8D5E7 /* MainWindow-iPad.xib in Resources */,
 				4A5BAA9913D82FB100C8D5E7 /* MainWindow.xib in Resources */,
+				F8BF35B71E973AA700C2B7BA /* PoseViewController.xib in Resources */,
 				4A5BAA9B13D82FC500C8D5E7 /* Data2 in Resources */,
 				F8D1DCFB1E972F88004BE599 /* SocialViewController.xib in Resources */,
 				4AF6EFA113DCF78700F77FB0 /* Icon-72.png in Resources */,
@@ -7443,6 +7473,7 @@
 				F8D1DCEC1E972CDF004BE599 /* SelectViewController.xib in Resources */,
 				4AA8B58E161AD60D00B48D70 /* Default-568h@2x.png in Resources */,
 				4AA8B58F161AD60D00B48D70 /* Default-LandscapeLeft.png in Resources */,
+				F8BF35BE1E973F5800C2B7BA /* WriteViewController.xib in Resources */,
 				4AA8B590161AD60D00B48D70 /* Default-LandscapeLeft@2x.png in Resources */,
 				4AA8B591161AD60D00B48D70 /* Default-LandscapeRight.png in Resources */,
 				4AA8B592161AD60D00B48D70 /* Default-LandscapeRight@2x.png in Resources */,
@@ -7452,6 +7483,7 @@
 				4AA8B596161AD60D00B48D70 /* Default-PortraitUpsideDown@2x.png in Resources */,
 				4AA8B597161AD60D00B48D70 /* Default.png in Resources */,
 				4AA8B598161AD60D00B48D70 /* Default@2x.png in Resources */,
+				F8BF35B01E9737C500C2B7BA /* map.png in Resources */,
 				4AA8B5DA161AEDDE00B48D70 /* Iris-568h@2x.png in Resources */,
 				F8D1DCF11E972E65004BE599 /* AdjustViewController.xib in Resources */,
 				F8A058D11E964C950012F7A8 /* MessageViewController.xib in Resources */,
@@ -7481,8 +7513,10 @@
 				4AEAEBFA17A7455D00F61E33 /* Iris.png in Resources */,
 				4AEAEBFE17A7456300F61E33 /* Data2 in Resources */,
 				4AEAEBF217A7455D00F61E33 /* Icon-Small-50.png in Resources */,
+				F8BF35B61E973AA700C2B7BA /* PoseViewController.xib in Resources */,
 				4AEAEC0117A7459400F61E33 /* Default-LandscapeLeft@2x.png in Resources */,
 				4AEAEBF717A7455D00F61E33 /* Iris-568h@2x.png in Resources */,
+				F8BF35BD1E973F5800C2B7BA /* WriteViewController.xib in Resources */,
 				4AEAEC0217A7459400F61E33 /* Default-LandscapeRight.png in Resources */,
 				4AEAEBFC17A7455D00F61E33 /* MainWindow-iPad.xib in Resources */,
 				4AEAEBFB17A7455D00F61E33 /* Iris@2x.png in Resources */,
@@ -7732,6 +7766,7 @@
 				4A5BAAA213D82FFA00C8D5E7 /* ARAppMovieDelegate.m in Sources */,
 				4A347B3A18B16328000BEB89 /* ARMarkerMulti.m in Sources */,
 				4A33B6E718ADBA2E0028A979 /* ARMarkerSquare.m in Sources */,
+				F8BF35BC1E973F5800C2B7BA /* WriteViewController.m in Sources */,
 				4A33B6DA18ADB97A0028A979 /* VEObject.m in Sources */,
 				4A33B6D518ADB95F0028A979 /* VEObjectMovie.m in Sources */,
 				F8D1DCF01E972E65004BE599 /* AdjustViewController.m in Sources */,
@@ -7741,11 +7776,13 @@
 				4A5BAAA513D82FFA00C8D5E7 /* ARViewController.m in Sources */,
 				F8D1DCFF1E972FA4004BE599 /* DetailsViewController.m in Sources */,
 				F8D1DCEB1E972CDF004BE599 /* SelectViewController.m in Sources */,
+				F8BF35C21E973FCA00C2B7BA /* BasicViewController.m in Sources */,
 				4A5BAAA613D82FFA00C8D5E7 /* main.m in Sources */,
 				F8D1DCF51E972F1E004BE599 /* MapViewController.m in Sources */,
 				4A33B70B18ADC8700028A979 /* ARView.m in Sources */,
 				4A33B6EC18ADBA520028A979 /* ARMarker.m in Sources */,
 				F8D1DCFA1E972F88004BE599 /* SocialViewController.m in Sources */,
+				F8BF35B51E973AA700C2B7BA /* PoseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7895,10 +7932,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AEAEBEF17A7454E00F61E33 /* main.m in Sources */,
+				F8BF35C11E973FCA00C2B7BA /* BasicViewController.m in Sources */,
 				4AEAEBEB17A7454A00F61E33 /* ARAppES1Delegate.m in Sources */,
 				4A33B6C618ADB86D0028A979 /* EAGLView.m in Sources */,
 				4AEAEBEC17A7454A00F61E33 /* ARViewController.m in Sources */,
 				4AEAEBED17A7454A00F61E33 /* ARView.m in Sources */,
+				F8BF35BB1E973F5800C2B7BA /* WriteViewController.m in Sources */,
+				F8BF35B41E973AA700C2B7BA /* PoseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

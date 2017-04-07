@@ -4,12 +4,11 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdjustViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PoseViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,19 +18,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkm-TE-CWF">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-Hw-aZa">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <connections>
-                        <action selector="poseAction" destination="-1" eventType="touchUpInside" id="6sr-Zp-yZe"/>
+                        <action selector="writeAction" destination="-1" eventType="touchUpInside" id="fd7-3E-MkT"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Qkm-TE-CWF" secondAttribute="trailing" id="5Sw-vw-2Jj"/>
-                <constraint firstAttribute="bottom" secondItem="Qkm-TE-CWF" secondAttribute="bottom" id="T1q-oN-6aQ"/>
-                <constraint firstItem="Qkm-TE-CWF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WFD-BG-y95"/>
-                <constraint firstItem="Qkm-TE-CWF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="llx-Ry-r5T"/>
+                <constraint firstAttribute="bottom" secondItem="Ume-Hw-aZa" secondAttribute="bottom" id="ATS-f4-jt6"/>
+                <constraint firstItem="Ume-Hw-aZa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NPw-Ag-2qh"/>
+                <constraint firstItem="Ume-Hw-aZa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Nky-kD-b6m"/>
+                <constraint firstAttribute="trailing" secondItem="Ume-Hw-aZa" secondAttribute="trailing" id="ypr-AT-g5g"/>
             </constraints>
         </view>
     </objects>
